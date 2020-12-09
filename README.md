@@ -1,0 +1,2 @@
+# btcpredictor
+We are the Anchain.ai Bitcoin Price Prediction team from UC Berkeley's Data-X course. Our product is called BTC Predictor. Our product uses a machine learning model to help Bitcoin investors make more reliable investment decisions while minimizing risk. BTC Predictor is a live dashboard that displays  minutely Bitcoin price forecasts, trading signals, and Bitcoin Twitter sentiment. 
