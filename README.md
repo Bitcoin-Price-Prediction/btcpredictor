@@ -1,4 +1,4 @@
-# Bitcoin Predictor
+# BTC Predictor
 We are the Anchain.ai Bitcoin Price Prediction team from UC Berkeley's Data-X course 
 
 ![BTC Predictor Demo](readme_files/demo.gif)
