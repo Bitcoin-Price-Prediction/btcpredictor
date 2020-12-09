@@ -56,7 +56,13 @@ Our approach consisted of 4 major parts.
 - Most common tone
 
 ## System Architecture
-![Alt text](readme_files/System Architecture.png?raw=true "Optional Title")
+![Alt text](https://github.com/Bitcoin-Price-Prediction/btcpredictor/blob/main/readme_files/System%20Architecture.png)
 
-
-
+## Model
+- **What type of model are you using?**
+    - Our product is powered by an LSTM model
+- **How did you develop your model?**
+    - We performed exploratory data analysis and time series correlation analysis on our Twitter and OHLC data with varying time ranges, such as a day, week, and month
+- **How well does the model perform?**
+    - Direction Accuracy: We’ve observed that the model can correctly predict the direction of a price change AT LEAST 85% of the time if used every 10 to 15 minutes
+    - SMAPE: We used the Symmetric Mean Absolute Percentage Error (SMAPE) to get a percentage bounded between 0 and 100 that quantifies how far off our predictions are with the actual price. From our experiments, we found that this was consistently below 1%, which indicates that the predicted price is of a similar magnitude to the actual price
