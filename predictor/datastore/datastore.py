@@ -5,9 +5,6 @@ import datastore.tweety as tweety
 import datetime
 import pyrebase
 
-# TODO:
-# 	1. Some things can probably be refactored / written more efficiently
-#
 class DataStore:
 	"""
 	A wrapper class for accessing realtime stock data and archived stock data.
