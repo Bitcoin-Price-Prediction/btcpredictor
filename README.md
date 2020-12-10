@@ -50,6 +50,8 @@
 3. BTC predictor is capable of collecting tweets *every minute* from [twint](https://github.com/twintproject/twint) thanks to its tweet cache. The tweet cache abstracts away all the intricacies of working with twint allowing for faster access to tweets.
 <br><br>
 4. BTC predictor will cache computations within each minute to prevent any repeated work. This allows you to get the results you need as fast as possible.
+<br><br>
+5. BTC predictor's underlying model is retrained on fresh data every 5 - 10 minutes allowing it to constantly learn emerging market trends and sentiments. This allows the model to anticipate shocks to the market and ensures that predictions will not degrade over time.
 
 ## Reproducibility
 
