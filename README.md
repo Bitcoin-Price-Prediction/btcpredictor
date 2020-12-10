@@ -50,7 +50,7 @@ BTC predictor is a dashboard powered by machine learning algorithms that helps B
 <br><br>
 3. BTC predictor is capable of collecting tweets *every minute* from [twint](https://github.com/twintproject/twint) thanks to its tweet cache. The tweet cache abstracts away all the intricacies of working with twint allowing for faster access to tweets.
 <br><br>
-4. ...
+4. BTC predictor will cache computations within each minute to prevent any repeated work. This allows you to do more with less.
 
 
 ## Reproducibility
