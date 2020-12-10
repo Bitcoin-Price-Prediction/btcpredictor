@@ -36,6 +36,7 @@ We are the Anchain.ai Bitcoin Price Prediction team from UC Berkeley's Data-X co
     - **IndicatorDemo.ipynb**:
     - **OracleDemo.ipynb**:
     - **dashboard.ipynb**:
+    - **RealTimeTradingSignalDemo.ipynb**:
     
 
 ## Technical Sophistication
