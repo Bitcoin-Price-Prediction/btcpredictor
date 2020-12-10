@@ -5,6 +5,29 @@ We are the Anchain.ai Bitcoin Price Prediction team from UC Berkeley's Data-X co
 
 ## Organization and Documentation
 
+Folder Hierarchy
+
+- heroku-script
+
+- predictor
+    - datastore
+        - archives.py
+        - btcstock.py
+        - datastore.py
+        - realtime.py
+        - tweety.py
+    - models
+        - baseline.py
+        - indicator.py
+        - oracle.py
+    - sti
+        - sti.py
+    - BaselineDemo.ipynb
+    - IndicatorDemo.ipynb
+    - OracleDemo.ipynb
+    - dashboard.ipynb
+    
+
 ## Technical Sophistication
 ![Alt text](https://github.com/Bitcoin-Price-Prediction/btcpredictor/blob/main/readme_files/System%20Architecture.png)
 
