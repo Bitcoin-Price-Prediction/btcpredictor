@@ -5,18 +5,18 @@ We are the Anchain.ai Bitcoin Price Prediction team from UC Berkeley's Data-X co
 
 ## Organization and Documentation
 
-Folder Hierarchy
+### Folder Hierarchy
 
 - **heroku-script**
     - **script.py**
     - **util**
-        - **database.py**:
-        - **helpers.py**:
-        - **logger.py**:
-        - **news_logger.py**:
-        - **reporter.py**:
-        - **tckr_logger.py**:
-        - **trxn_logger.py**:
+        - **database.py**: establishes a connection to our Firebase database
+        - **helpers.py**: contains several helper methods for scheduling and timing
+        - **logger.py**: contains an abstract class that has two static methods: `log` and `store`. Every logger inherits from this class
+        - **news_logger.py**: contains a python class for logging news data from IEXCloud every 5 minutes. This data is stored in Firebase at the end of each day
+        - **reporter.py**: contains a class for sending emails. Each email contains a report that summarizes the data collected for the past day. The reporter also sends an email whenever an error occurs during data collection
+        - **tckr_logger.py**: contains a class for logging 5 second Bitcoin exchange data. This data is stored in Firebase at the end of each day
+        - **trxn_logger.py**: contains a class for logging Bitcoin transaction data. This data is stored in Firebase at the end of each day
 
 - **predictor**: contains the machine learning models and dashboard for the project
     - **datastore**: contains several files that interact with the data collected from our 3rd party API’s
