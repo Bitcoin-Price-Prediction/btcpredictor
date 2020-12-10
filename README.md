@@ -20,11 +20,12 @@ We are the Anchain.ai Bitcoin Price Prediction team from UC Berkeley's Data-X co
 
 - **predictor**: contains the machine learning models and dashboard for the project
     - **datastore**: contains several files that interact with the data collected from our 3rd party API’s
-        - **archives.py**:
-        - **btcstock.py**:
-        - **datastore.py**:
-        - **realtime.py**:
-        - **tweety.py**:
+        - **archives.py**: contains a class with methods that retrieve data from long-term Firebase database
+        - **btcstock.py**: contains a class that provides easier access to minute-by-minute OHLCV Bitcoin data from https://www.bitstamp.net
+        - **datastore.py**: a class that 
+        - **realtime.py**: contains a class with methods that retrieve data from our realtime Firebase database
+        - **tweety.py**: contains a class with several methods that allow for fast tweet scraping using [Twint](https://github.com/twintproject/twint)
+
     - **models**: contains 3 different LSTM models each of which can make minutely Bitcoin price predcitions
         - **baseline.py**: uses the past price as the only feature
         - **indicator.py**: uses technical indicators computed from open-high-low-close-volume (OHLCV) data as features
