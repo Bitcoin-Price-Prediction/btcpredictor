@@ -32,11 +32,11 @@ We are the Anchain.ai Bitcoin Price Prediction team from UC Berkeley's Data-X co
         - **oracle.py**: uses technical indicators and twitter sentiment scores as features
     - **sti**
         - **sti.py**: a wrapper class for computing various stock technical indicators from OHLCV data
-    - **BaselineDemo.ipynb**:
-    - **IndicatorDemo.ipynb**:
-    - **OracleDemo.ipynb**:
-    - **dashboard.ipynb**:
-    - **RealTimeTradingSignalDemo.ipynb**:
+    - **BaselineDemo.ipynb**: this Ipython notebook walks you through the baseline.py class
+    - **IndicatorDemo.ipynb**: this Ipython notebook walks you through the indicator.py class
+    - **OracleDemo.ipynb**: this Ipython notebook walks you through the oracle.py class
+    - **dashboard.ipynb**: this Ipython notebook consists of the code for the actual dashboard
+    - **RealTimeTradingSignalDemo.ipynb**: this Ipython notebook walks you through the code for the trading strategy aspect of the dashboard
     
 
 ## Technical Sophistication
