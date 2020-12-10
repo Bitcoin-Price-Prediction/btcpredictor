@@ -18,20 +18,20 @@ Folder Hierarchy
         - tckr_logger.py
         - trxn_logger.py
 
-- predictor
-    - datastore
+- predictor: contains the machine learning models and dashboard for the project
+    - datastore: contains several files that interact with the data collected from our 3rd party API’s
         - archives.py
         - btcstock.py
         - datastore.py
         - realtime.py
         - tweety.py
-    - models
-        - baseline.py
-        - indicator.py
-        - oracle.py
+    - models: contains 3 different LSTM models each of which can make minutely Bitcoin price predcitions
+        - baseline.py: uses the past price as the only feature
+        - indicator.py: uses technical indicators computed from open-high-low-close-volume (OHLCV) data as features
+        - oracle.py: uses technical indicators and twitter sentiment scores as features
     - sti
-        - sti.py
-    - BaselineDemo.ipynb
+        - sti.py: a wrapper class for computing various stock technical indicators from OHLCV data
+    - BaselineDemo.ipynb: 
     - IndicatorDemo.ipynb
     - OracleDemo.ipynb
     - dashboard.ipynb
