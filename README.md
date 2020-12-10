@@ -45,9 +45,10 @@ We are the Anchain.ai Bitcoin Price Prediction team from UC Berkeley's Data-X co
 ## Efficiency
 
 Key design features: 
-1. BTC predictor is powered by an LSTM model. [Research](https://arxiv.org/ftp/arxiv/papers/2006/2006.14473.pdf) suggests that the LSTM model outperforms the ARIMA model for Bitcoin price prediction. The LSTM model also offers a lot more flexibility than the prophet model, making it ideal for this particular task.
+1. BTC predictor is powered by an LSTM model, which is well-known for its high performance in sequence classification tasks. Why not use some other time series model? In the [research](https://arxiv.org/ftp/arxiv/papers/2006/2006.14473.pdf) we reviewed, we found that the LSTM model offers better Bitcoin exchange rate forecasts than the ARIMA model. Furthermore, the LSTM model offers a lot more flexibility than the prophet model, making it ideal for this particular task.
 2. BTC predictor also comes with a tweet cache, which allows it to interact with tweets collected from [Twint](https://github.com/twintproject/twint) *every minute*.
-3. 
+3. For backtesting, we collected over 2+ years worth of tweets using our datastore's tweet scraper. Under the hood, it uses multiprocessing and multithreading to sidestep Python's GIL. With the scraper, we managed to reduce tweet collection time from several days to ~20 minutes.
+
 
 ## Reproducibility
 
