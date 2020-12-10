@@ -22,7 +22,7 @@ We are the Anchain.ai Bitcoin Price Prediction team from UC Berkeley's Data-X co
     - **datastore**: contains several files that interact with the data collected from our 3rd party API’s
         - **archives.py**: contains a class with methods that retrieve data from long-term Firebase database
         - **btcstock.py**: contains a class that provides easier access to minute-by-minute OHLCV Bitcoin data from [Bitstamp](https://www.bitstamp.net)
-        - **datastore.py**: a class that 
+        - **datastore.py**: a class composed of all other modules in this folder
         - **realtime.py**: contains a class with methods that retrieve data from our realtime Firebase database
         - **tweety.py**: contains a class with several methods that allow for fast tweet scraping using [Twint](https://github.com/twintproject/twint)
 
