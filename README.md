@@ -47,22 +47,22 @@ We are the Anchain.ai Bitcoin Price Prediction team from UC Berkeley's Data-X co
 ## Reproducibility
 
 ### Package Requirements ###
-tensorflow==2.3.1
-sklearn==0.23.2
-plotly==4.9.0
-pyrebase==3.0.27
-pandas==1.0.1
-ta==0.7.0
-fbprophet==0.7.1
-textblob==0.15.3
-twint==2.1.21
-requests==2.11.1
-numpy==1.18.5
-jupyter_dash==0.3.1
-dash_bootstrap_components==0.10.7
-dash_core_components==1.14.1
-dash_html_components==1.1.1
-dash==1.18.1
+- tensorflow==2.3.1
+- sklearn==0.23.2
+- plotly==4.9.0
+- pyrebase==3.0.27
+- pandas==1.0.1
+- ta==0.7.0
+- fbprophet==0.7.1
+- textblob==0.15.3
+- twint==2.1.21
+- requests==2.11.1
+- numpy==1.18.5
+- jupyter_dash==0.3.1
+- dash_bootstrap_components==0.10.7
+- dash_core_components==1.14.1
+- dash_html_components==1.1.1
+- dash==1.18.1
 
 ### How to Run: Demos ### 
 1. Download required packages
