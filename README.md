@@ -35,7 +35,7 @@
     - **BaselineDemo.ipynb**: this Ipython notebook walks you through the baseline.py class
     - **IndicatorDemo.ipynb**: this Ipython notebook walks you through the indicator.py class
     - **OracleDemo.ipynb**: this Ipython notebook walks you through the oracle.py class
-    - **dashboard.ipynb**: this Ipython notebook consists of the code for the actual dashboard
+    - **Dashboard.ipynb**: this Ipython notebook consists of the code for the actual dashboard
     - **RealTimeTradingSignalDemo.ipynb**: this Ipython notebook walks you through the code for the trading strategy aspect of the dashboard
     
 ## Technical Sophistication and Efficiency
