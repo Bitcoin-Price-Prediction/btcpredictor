@@ -38,12 +38,16 @@ We are the Anchain.ai Bitcoin Price Prediction team from UC Berkeley's Data-X co
     - **dashboard.ipynb**: this Ipython notebook consists of the code for the actual dashboard
     - **RealTimeTradingSignalDemo.ipynb**: this Ipython notebook walks you through the code for the trading strategy aspect of the dashboard
     
-
 ## Technical Sophistication
 
 <p align="center"><img src="https://github.com/Bitcoin-Price-Prediction/btcpredictor/blob/main/readme_files/System%20Architecture.png"/></p>
 
 ## Efficiency
+
+Key design features: 
+1. BTC predictor is powered by an LSTM model. [Research](https://arxiv.org/ftp/arxiv/papers/2006/2006.14473.pdf) suggests that the LSTM model outperforms the ARIMA model for Bitcoin price prediction. The LSTM model also offers a lot more flexibility than the prophet model, making it ideal for this particular task.
+2. BTC predictor also comes with a tweet cache, which allows it to interact with tweets collected from [Twint](https://github.com/twintproject/twint) *every minute*.
+3. 
 
 ## Reproducibility
 
