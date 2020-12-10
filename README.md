@@ -85,7 +85,7 @@
     - Note: OracleDemo.ipynb may show warnings due to our twint dependency and takes a long time to warm up.
 3. Run the cells in order up until “Example Usage”
 4. Run the following cell 
-5. Run the cell below with predictor.has_model() until the output is True
+5. Run the cell below with `predictor.has_model()` until the output is True
 6. Run the remaining cells in the notebook
 7. Click the link to the external Dash application
 
@@ -100,7 +100,7 @@
     - Project Responsibilities: Creating and implementing various aspects of the backend model 
 - **Michela Burns** 
     - Major: Data Science
-    - About: Has past project and internship experience in Machine Learning and Data Analytics. 
+    - About: Has past project and internship experience in Machine Learning and Data Analytics
     - Project Responsibilities: Twitter web scraping and real-time dashboard
 - **Vivian Lin** 
     - Major: Data Science and Economics 
