@@ -7,7 +7,7 @@
 
 ### Folder Hierarchy
 
-- **heroku-script**
+- **heroku-script**: contains the code for our 24/7 data collector
     - **script.py**: contains the code that schedules when the data should be collected and stored in our Firebase database
     - **util**: contains the code for each data collector, or logger for short, and any additional helper code
         - **database.py**: establishes a connection to our Firebase database
