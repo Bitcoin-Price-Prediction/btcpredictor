@@ -51,7 +51,7 @@
 <br><br>
 4. BTC predictor will cache computations within each minute to prevent any repeated work. This allows you to get the results you need as fast as possible.
 <br><br>
-5. BTC predictor's underlying model is retrained on fresh data every 5 - 10 minutes allowing it to constantly learn emerging market trends and sentiments. This allows the model to anticipate shocks to the market and ensures that predictions will not degrade over time.
+5. BTC predictor's underlying model is retrained on fresh data every 5 - 10 minutes. Frequent retraining allows the model to constantly learn emerging market trends and sentiments. This in turn ensures that predictions do not degrade over time and gives the model the ability to anticipate shocks to the market. Thanks to our multithreaded training scheme, model retraining does not interrupt dashboard predictions, so the end user will always see a constant stream of predictions every minute.
 
 ## Reproducibility
 
