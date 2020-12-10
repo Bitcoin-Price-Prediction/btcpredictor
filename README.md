@@ -8,6 +8,15 @@ We are the Anchain.ai Bitcoin Price Prediction team from UC Berkeley's Data-X co
 Folder Hierarchy
 
 - heroku-script
+    - script.py
+    - util
+        - database.py
+        - helpers.py
+        - logger.py
+        - news_logger.py
+        - reporter.py
+        - tckr_logger.py
+        - trxn_logger.py
 
 - predictor
     - datastore
