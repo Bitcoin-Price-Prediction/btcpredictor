@@ -46,6 +46,42 @@ We are the Anchain.ai Bitcoin Price Prediction team from UC Berkeley's Data-X co
 
 ## Reproducibility
 
+### Package Requirements ###
+tensorflow==2.3.1
+sklearn==0.23.2
+plotly==4.9.0
+pyrebase==3.0.27
+pandas==1.0.1
+ta==0.7.0
+fbprophet==0.7.1
+textblob==0.15.3
+twint==2.1.21
+requests==2.11.1
+numpy==1.18.5
+jupyter_dash==0.3.1
+dash_bootstrap_components==0.10.7
+dash_core_components==1.14.1
+dash_html_components==1.1.1
+dash==1.18.1
+
+### How to Run: Demos ### 
+1. Download required packages
+2. Open the demo of your choosing in a Jupyter Notebook (NOT Google Colab)
+    1. Note: OracleDemo.ipynb may show warnings due to our twint dependency and takes a long time to warm up. It is recommended to start with IndicatorDemo.ipynb first.
+3. Run the cells in order and please follow the comments!
+
+
+### How to Run: Dashboard ### 
+1. Download required packages
+2. Open dashboard.ipynb in a Jupyter Notebook (NOT Google Colab)
+    1. Note: OracleDemo.ipynb may show warnings due to our twint dependency and takes a long time to warm up.
+3. Run the cells in order up until “Example Usage”
+4. Run the following cell 
+5. Run the cell below with predictor.has_model() until the output is True
+6. Run the remaining cells in the notebook
+7. Click the link to the external Dash application
+
+
 ## About the Team
 ![](https://github.com/Bitcoin-Price-Prediction/btcpredictor/blob/main/readme_files/Team.png)
 
