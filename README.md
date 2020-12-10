@@ -8,7 +8,7 @@ We are the Anchain.ai Bitcoin Price Prediction team from UC Berkeley's Data-X co
 ### Folder Hierarchy
 
 - **heroku-script**
-    - **script.py**
+    - **script.py**: contains the code that schedules when the data should be collected and stored in our Firebase database
     - **util**
         - **database.py**: establishes a connection to our Firebase database
         - **helpers.py**: contains several helper methods for scheduling and timing
