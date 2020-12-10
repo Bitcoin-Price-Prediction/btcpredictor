@@ -9,7 +9,7 @@
 
 - **heroku-script**
     - **script.py**: contains the code that schedules when the data should be collected and stored in our Firebase database
-    - **util**
+    - **util**: contains the code for each data collector, or logger for short, and any additional helper code
         - **database.py**: establishes a connection to our Firebase database
         - **helpers.py**: contains several helper methods for scheduling and timing
         - **logger.py**: contains an abstract class that has two static methods: `log` and `store`. Every logger inherits from this class
@@ -25,12 +25,11 @@
         - **datastore.py**: a class composed of all other modules in this folder
         - **realtime.py**: contains a class with methods that retrieve data from our realtime Firebase database
         - **tweety.py**: contains a class with several methods that allow for fast tweet scraping using [twint](https://github.com/twintproject/twint)
-
     - **models**: contains 3 different LSTM models each of which can make minutely Bitcoin price predcitions
         - **baseline.py**: uses the past price as the only feature
         - **indicator.py**: uses technical indicators computed from open-high-low-close-volume (OHLCV) data as features
         - **oracle.py**: uses technical indicators and twitter sentiment scores as features
-    - **sti**
+    - **sti**: contains a module for stock technical indicator (STI) computations
         - **sti.py**: a wrapper class for computing various stock technical indicators from OHLCV data
     - **BaselineDemo.ipynb**: this Ipython notebook walks you through the baseline.py class
     - **IndicatorDemo.ipynb**: this Ipython notebook walks you through the indicator.py class
