@@ -1,5 +1,5 @@
 # BTC Predictor
-BTC predictor is a dashboard powered by machine learning algorithms that helps Bitcoin investors make more reliable investment decisions. It was designed by the Anchain.ai Bitcoin Price Prediction team from UC Berkeley's Data-X course. 
+<p align="center">BTC predictor is a dashboard powered by machine learning algorithms that helps Bitcoin investors make more reliable investment decisions. It was designed by the Anchain.ai Bitcoin Price Prediction team from UC Berkeley's Data-X course.</p>
 
 <p align="center"><img src="readme_files/demo.gif"/></p>
 
@@ -50,8 +50,7 @@ BTC predictor is a dashboard powered by machine learning algorithms that helps B
 <br><br>
 3. BTC predictor is capable of collecting tweets *every minute* from [twint](https://github.com/twintproject/twint) thanks to its tweet cache. The tweet cache abstracts away all the intricacies of working with twint allowing for faster access to tweets.
 <br><br>
-4. BTC predictor will cache computations within each minute to prevent any repeated work. This allows you to do more with less.
-
+4. BTC predictor will cache computations within each minute to prevent any repeated work. This allows you to get the results you need as fast as possible.
 
 ## Reproducibility
 
@@ -76,14 +75,14 @@ BTC predictor is a dashboard powered by machine learning algorithms that helps B
 ### How to Run: Demos ### 
 1. Download required packages
 2. Open the demo of your choosing in a Jupyter Notebook (NOT Google Colab)
-    1. Note: OracleDemo.ipynb may show warnings due to our twint dependency and takes a long time to warm up. It is recommended to start with IndicatorDemo.ipynb first.
+    - Note: OracleDemo.ipynb may show warnings due to our twint dependency and takes a long time to warm up. It is recommended to start with IndicatorDemo.ipynb first.
 3. Run the cells in order and please follow the comments!
 
 
 ### How to Run: Dashboard ### 
 1. Download required packages
 2. Open dashboard.ipynb in a Jupyter Notebook (NOT Google Colab)
-    1. Note: OracleDemo.ipynb may show warnings due to our twint dependency and takes a long time to warm up.
+    - Note: OracleDemo.ipynb may show warnings due to our twint dependency and takes a long time to warm up.
 3. Run the cells in order up until “Example Usage”
 4. Run the following cell 
 5. Run the cell below with predictor.has_model() until the output is True
