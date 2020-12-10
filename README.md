@@ -3,6 +3,10 @@ We are the Anchain.ai Bitcoin Price Prediction team from UC Berkeley's Data-X co
 
 ![BTC Predictor Demo](readme_files/demo.gif)
 
+<div style="text-align:center">
+<img src="readme_files/demo.gif"/>
+</div>
+
 ## Organization and Documentation
 
 ### Folder Hierarchy
