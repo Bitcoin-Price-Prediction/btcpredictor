@@ -46,7 +46,7 @@
 ### Key Features
 1. BTC predictor is powered by an LSTM model, which is well-known for its high performance in sequence prediction tasks. Why not use some other time series model? In the [research](https://arxiv.org/ftp/arxiv/papers/2006/2006.14473.pdf) we reviewed, we found that the LSTM model offers better Bitcoin exchange rate forecasts than the ARIMA model. Furthermore, the LSTM model offers a lot more flexibility than the prophet model, making it ideal for this particular task.
 <br><br>
-2. For backtesting, we collected over 2+ years worth of tweets using our datastore's tweet scraper. Under the hood, it uses multiprocessing and multithreading to sidestep Python's GIL. With the scraper, we managed to reduce tweet collection time from several days to ~20 minutes.
+2. For backtesting, we collected over 2+ years worth of tweets using our datastore's tweet scraper. Under the hood, it uses multiprocessing and multithreading to help reduce the effect of Python's GIL and achieve faster collection times. With the scraper, we managed to reduce tweet collection time from several days to ~20 minutes.
 <br><br>
 3. BTC predictor is capable of collecting tweets *every minute* from [twint](https://github.com/twintproject/twint) thanks to its tweet cache. The tweet cache abstracts away all the intricacies of working with twint allowing for faster access to tweets.
 <br><br>
