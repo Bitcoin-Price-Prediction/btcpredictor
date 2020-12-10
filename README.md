@@ -24,7 +24,7 @@ We are the Anchain.ai Bitcoin Price Prediction team from UC Berkeley's Data-X co
         - **btcstock.py**: contains a class that provides easier access to minute-by-minute OHLCV Bitcoin data from [Bitstamp](https://www.bitstamp.net)
         - **datastore.py**: a class composed of all other modules in this folder
         - **realtime.py**: contains a class with methods that retrieve data from our realtime Firebase database
-        - **tweety.py**: contains a class with several methods that allow for fast tweet scraping using [Twint](https://github.com/twintproject/twint)
+        - **tweety.py**: contains a class with several methods that allow for fast tweet scraping using [twint](https://github.com/twintproject/twint)
 
     - **models**: contains 3 different LSTM models each of which can make minutely Bitcoin price predcitions
         - **baseline.py**: uses the past price as the only feature
@@ -46,11 +46,11 @@ We are the Anchain.ai Bitcoin Price Prediction team from UC Berkeley's Data-X co
 
 1. BTC predictor is powered by an LSTM model, which is well-known for its high performance in sequence prediction tasks. Why not use some other time series model? In the [research](https://arxiv.org/ftp/arxiv/papers/2006/2006.14473.pdf) we reviewed, we found that the LSTM model offers better Bitcoin exchange rate forecasts than the ARIMA model. Furthermore, the LSTM model offers a lot more flexibility than the prophet model, making it ideal for this particular task.
 <br><br>
-2. BTC predictor's tweet cache allows it to interact with tweets collected from [Twint](https://github.com/twintproject/twint) *every minute*.
+2. For backtesting, we collected over 2+ years worth of tweets using our datastore's tweet scraper. Under the hood, it uses multiprocessing and multithreading to sidestep Python's GIL. With the scraper, we managed to reduce tweet collection time from several days to ~20 minutes.
 <br><br>
-3. For backtesting, we collected over 2+ years worth of tweets using our datastore's tweet scraper. Under the hood, it uses multiprocessing and multithreading to sidestep Python's GIL. With the scraper, we managed to reduce tweet collection time from several days to ~20 minutes.
+3. BTC predictor is capable of collecting tweets *every minute* from [twint](https://github.com/twintproject/twint) thanks to its tweet cache. The tweet cache abstracts away all the intricacies of working with twint allowing for faster access to tweets.
 <br><br>
-4. To ensure
+4. ...
 
 
 ## Reproducibility
