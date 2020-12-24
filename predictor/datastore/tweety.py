@@ -1185,6 +1185,4 @@ class TweetScraper:
 			else:
 				grouped_twitter['tone_most_common'] = most_common
 
-
-
 		return grouped_twitter.loc[:, features]

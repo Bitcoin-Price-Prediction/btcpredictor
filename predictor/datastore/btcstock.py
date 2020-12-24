@@ -327,7 +327,7 @@ class BtcStockHandler:
 		else:
 			ohlcv_frame.to_csv(fname, index=False)
 
-	def mass_download(self, start, final=None, delay=5, verbose=True):
+	def mass_download(self, start, final, delay=5, verbose=True):
 		"""
 		Get all minute-by-minute data from `start` to `final` and store all
 		files away neatly.
@@ -338,8 +338,7 @@ class BtcStockHandler:
 				The start date (inclusive). Must be in the format YYYY-mm-dd.
 
 			final : string
-				The end date (exclusive). Must be in the format YYYY-mm-dd. If
-				None (the default), get all data from `start` to now.
+				The end date (exclusive). Must be in the format YYYY-mm-dd.
 
 			delay : int
 				Bitstamp has a request limit of 8000 requests every 10 minutes. Feel 
